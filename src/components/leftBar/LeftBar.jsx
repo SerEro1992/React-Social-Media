@@ -13,10 +13,10 @@ import Messages from "/img/10.png";
 import Tutorials from "/img/11.png";
 import Courses from "/img/12.png";
 import Fund from "/img/13.png";
-import { AuthContex } from "../../contex/authContext";
+import { AuthContext } from "../../contex/authContext";
 
 const LeftBar = () => {
-	const { currentUser } = useContext(AuthContex);
+	const { currentUser } = useContext(AuthContext);
 	return (
 		<div className="leftBar">
 			<div className="container">

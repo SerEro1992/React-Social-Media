@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import "./Stories.scss";
-import { AuthContex } from "../../contex/authContext";
+import { AuthContext } from "../../contex/authContext";
 
 const Stories = () => {
-	const { currentUser } = useContext(AuthContex);
+	const { currentUser } = useContext(AuthContext);
 	//TEMPORARY
 	const stories = [
 		{

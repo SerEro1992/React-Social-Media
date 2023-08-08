@@ -6,9 +6,16 @@
 		position: sticky;
 		top: 71px;
 		background-color: themed("bgSoft");
-		color:themed('textColor');
+		color: themed("textColor");
 		height: calc(100vh - 71px);
 		overflow: scroll;
+
+		@include mobile {
+			display: none;
+		}
+		@include tablet {
+			display: none;
+		}
 
 		&::-webkit-scrollbar {
 			display: none;

@@ -10,12 +10,12 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { Link } from "react-router-dom";
 
 import "./Navbar.scss";
-import { DarkModeContex } from "../../contex/darkModeContext";
-import { AuthContex } from "../../contex/authContext";
+import { DarkModeContext } from "../../contex/darkModeContext";
+import { AuthContext } from "../../contex/authContext";
 
 const Navbar = () => {
-	const { toggle, darkMode } = useContext(DarkModeContex);
-	const { currentUser } = useContext(AuthContex);
+	const { toggle, darkMode } = useContext(DarkModeContext);
+	const { currentUser } = useContext(AuthContext);
 
 	return (
 		<div className="navbar">

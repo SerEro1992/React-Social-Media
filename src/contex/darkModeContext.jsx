@@ -1,8 +1,8 @@
 import React, { createContext, useEffect, useState } from "react";
 
-export const DarkModeContex = createContext();
+export const DarkModeContext = createContext();
 
-export const DarkModeContexProvider = ({ children }) => {
+export const DarkModeContextProvider = ({ children }) => {
 	const [darkMode, setDarkMode] = useState(
 		JSON.parse(localStorage.getItem("darkMode")) || false
 	);
@@ -16,8 +16,8 @@ export const DarkModeContexProvider = ({ children }) => {
 	}, [darkMode]);
 
 	return (
-		<DarkModeContex.Provider value={{ darkMode, toggle }}>
+		<DarkModeContext.Provider value={{ darkMode, toggle }}>
 			{children}
-		</DarkModeContex.Provider>
+		</DarkModeContext.Provider>
 	);
 };

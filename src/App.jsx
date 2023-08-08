@@ -13,12 +13,12 @@ import RightBar from "./components/rightBar/RightBar";
 import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
 import "./style.scss";
-import { DarkModeContex } from "./contex/darkModeContext";
-import { AuthContex } from "./contex/authContext";
+import { DarkModeContext } from "./contex/darkModeContext";
+import { AuthContext } from "./contex/authContext";
 
 function App() {
-	const { currentUser } = useContext(AuthContex);
-	const { darkMode } = useContext(DarkModeContex);
+	const { currentUser } = useContext(AuthContext);
+	const { darkMode } = useContext(DarkModeContext);
 	console.log(darkMode);
 	const Layout = () => {
 		return (
